@@ -1,0 +1,13 @@
+#
+# pass for whitelisted (public) routes
+# block for blacklisted (disabled, banned) routes
+#
+rules:
+  pass: 
+    - api/v2/barong/identity
+    - api/v2/peatio/public
+    - api/v2/barong/both-listed
+  block:
+    - api/v2/peatio/blocked
+    - api/v2/barong/blocked
+    - api/v2/barong/both-listed
